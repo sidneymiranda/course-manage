@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "course-manager:build"
+            "buildTarget": "course-manager:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "course-manager:build:production"
+              "buildTarget": "course-manager:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "course-manager:build"
+            "buildTarget": "course-manager:build"
           }
         },
         "test": {
@@ -119,6 +119,5 @@
           }
         }
       }
-    }},
-  "defaultProject": "course-manager"
+    }}
 }
